@@ -4,6 +4,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {MenubarModule} from 'primeng/menubar';
 import { BrowserModule } from '@angular/platform-browser';
 import {InputSwitchModule} from 'primeng/inputswitch';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
 
 
 @NgModule({
@@ -12,13 +13,15 @@ import {InputSwitchModule} from 'primeng/inputswitch';
     CommonModule,
     InputTextModule,
     MenubarModule,
-    InputSwitchModule
+    InputSwitchModule,
+    ProgressSpinnerModule
 
   ],
   exports:[
     InputTextModule,
     MenubarModule,
-    InputSwitchModule
+    InputSwitchModule,
+    ProgressSpinnerModule
   ]
 })
 export class PrimeNgModule { }

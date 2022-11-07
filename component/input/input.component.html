@@ -12,13 +12,18 @@
                           class="ml-4"
                           (onChange)="switchToKey($event)">
           </p-inputSwitch>
+          
     
 </div>
 <div class="key-input" *ngIf="checked">
+  <span class="p-input-icon-right">
+    <i class="pi pi-key"></i>
     <input type="text"
+            class="buscador-input"
             pInputText
             placeholder="API-Key"
             (keyup.enter)="sendKey($event)"/>
+  </span>
 </div>
 <ng-template #KeyInput>
  

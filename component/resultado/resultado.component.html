@@ -1,4 +1,5 @@
-<div class="container col-4">
+
+<div  class="container col-4">
     <div class="card">
         <p-dataView [value]="resultados">
             <ng-template class="ml-5" pTemplate="header">
@@ -37,6 +38,11 @@
         </p-dataView>
     </div>
     <ng-template #tabla>
-
+        <div class="spinner">
+            <p-progressSpinner>
+    
+            </p-progressSpinner>
+        </div>
     </ng-template>
+   
 </div>
