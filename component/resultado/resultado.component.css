@@ -1,0 +1,30 @@
+.resultados-list-item{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+table{
+    text-align: center;
+    margin-left: 6rem;
+    letter-spacing: 3px;
+    
+}
+.card{
+    position: relative;
+}
+
+.resultados-list-item{
+    display: block;
+    position: relative;
+}
+
+img{
+    margin-left:11rem;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.card-title{
+    margin-left: 12rem;
+}

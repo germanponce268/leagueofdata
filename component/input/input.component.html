@@ -1,0 +1,25 @@
+<div class="buscador">
+  <h3>INGRESA NOMBRE DE INVOCADOR</h3>
+  <span class="p-input-icon-right">
+    <i class="pi pi-search"></i>
+    <input type="text"
+            class="buscador-input"
+           pInputText placeholder="Buscar"
+           (keyup.enter)="buscar($event)"
+           />
+          </span>
+          <p-inputSwitch [(ngModel)]="checked" 
+                          class="ml-4"
+                          (onChange)="switchToKey($event)">
+          </p-inputSwitch>
+    
+</div>
+<div class="key-input" *ngIf="checked">
+    <input type="text"
+            pInputText
+            placeholder="API-Key"
+            (keyup.enter)="sendKey($event)"/>
+</div>
+<ng-template #KeyInput>
+ 
+</ng-template>

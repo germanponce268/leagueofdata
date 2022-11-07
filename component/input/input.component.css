@@ -1,0 +1,11 @@
+/* @Import "../primeflex/primeflex.css";
+@Import url("/LeagueOfData/node_modules/primeng/resources/primeng.min.css");
+ */
+
+ h3{
+    margin-left: 4rem;
+ }
+
+.buscador-input{
+   margin-left:7rem;
+}

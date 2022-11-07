@@ -1,0 +1,42 @@
+<div class="container col-4">
+    <div class="card">
+        <p-dataView [value]="resultados">
+            <ng-template class="ml-5" pTemplate="header">
+                <div class="card-title">
+                    {{servicio.kda.championName}}
+                </div>
+            </ng-template>
+            <ng-template let-resultados 
+                        pTemplate="listItem"
+                        layout="grid">
+                <div class="col-12">
+                    <div class="resultados-list-item">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/{{servicio.kda.championName}}.png" alt="">
+                        <div class="championName">
+                
+                        </div>
+                        <div class="kdaTable" *ngIf="servicio.kda.championName; else tabla">
+                            <h3>{{resultadoPartida | i18nSelect : resultadoMap}}</h3>
+                            <table>
+                                <tr>
+                                    <th>Kills|</th>
+                                    <th>Deaths|</th>
+                                    <th>Assists</th>
+                                </tr>
+                                <tr>
+                                    <td>{{servicio.kda.kills}}</td>
+                                    <td>{{servicio.kda.deaths}}</td>
+                                    <td>{{servicio.kda.assists}}</td>
+                                </tr>
+                            </table>
+    
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-dataView>
+    </div>
+    <ng-template #tabla>
+
+    </ng-template>
+</div>
